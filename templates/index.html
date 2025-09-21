@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ AI Agent 2025 - Intelligente Entwicklungsplattform</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons - Load before Monaco to avoid AMD conflicts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+            integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+            crossorigin="anonymous"></script>
+    
+    <!-- Monaco Editor - Loaded dynamically by JavaScript for proper singleton control -->
+    
+    <!-- DOMPurify for XSS Protection - CRITICAL SECURITY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.8/purify.min.js"
+            integrity="sha384-KNMJyIh8fqKG7h6HQv0HwuI5auzJ0r/HHl2QsLz+zxOF0IKAr2R5h5U+5E9NF3qb"
+            crossorigin="anonymous"></script>
+    
+    <!-- Marked.js for Markdown Parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"
+            integrity="sha384-vtxVw4A8BKZURiTL24aHTLIWQ8/zXEDFJQjMjuLJOCvYPqRY5w51mw+7W6vTYFhQ"
+            crossorigin="anonymous"></script>
+    
+    <!-- Highlight.js for Code Syntax Highlighting with SRI Security -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+          integrity="sha384-wH75j6z1lH97ZOpMOInqhgKzFkAInZPPSPlZpYKYTOqsaizPvhQZmAtLcPKXpLyH"
+          crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+            integrity="sha384-F/bZzf7p3Joyp5psL90p/p89AZJsndkSoGwRpXcZhleCWhd8SnRuoYo4d0yirjJp"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"
+            integrity="sha384-FWJTgPmIGm1+zpNhubuHRC/ulS1UK7hAZ7qiUUmKD8yGfPcn5ZXYBd2qRgi6L8Tu"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"
+            integrity="sha384-44q2s9jxk8W5N9gAB0yn7UYLi9E2oVw8eHyaTZLkDS3WuZM/AttkAiVj6JoZuGS4"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/typescript.min.js"
+            integrity="sha384-ORwtVEfrCZ0gzGacgmfv1wOtxcPIaVfHKwq8dKQjObRwx3qpKjsSg1ldTu1PEgXd"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"
+            integrity="sha384-8q00eP+tyV9451aJYD5ML3ftuHKsGnDcezp7EXMEclDg1fZVSoj8O+3VyJkXmWp"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js"
+            integrity="sha384-RbRhXcXx5VHUdUaC5R0oV+XBXA5GhkaVCUzK8xN19K3FmtWSHyGVgulK92XnhBsI"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"
+            integrity="sha384-OqfnIfpOmAlErKRs2a525ZcwLuZ8Z1x8hPdIwBcMtHkJBbHnpJ6wX5/LVzASHkD5"
+            crossorigin="anonymous"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="dark-theme">
+    <!-- Background Effects -->
+    <div class="background-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-pattern"></div>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" onclick="toggleMobileMenu()" aria-label="Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
+
+    <!-- Main App Container -->
+    <div class="app-container">
+        <!-- Modern Sidebar Navigation -->
+        <nav class="sidebar-nav" id="sidebarNav">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10 9 11 1.09-.21 2.14-.71 3.14-1.43C16.5 25.29 20 21.05 20 17V7l-8-5z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">AI Agent</span>
+                    <span class="brand-version">2025</span>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <button class="nav-item active" data-section="dashboard">
+                    <i data-feather="home"></i>
+                    <span class="nav-text">Übersicht</span>
+                    <div class="nav-indicator"></div>
+                </button>
+                <button class="nav-item" data-section="results">
+                    <i data-feather="activity"></i>
+                    <span class="nav-text">Ergebnisse</span>
+                    <div class="nav-indicator"></div>
+                </button>
+                <button class="nav-item" data-section="tests">
+                    <i data-feather="check-square"></i>
+                    <span class="nav-text">Tests</span>
+                    <div class="nav-indicator"></div>
+                </button>
+                <button class="nav-item" data-section="snippets">
+                    <i data-feather="code"></i>
+                    <span class="nav-text">Code-Bausteine</span>
+                    <div class="nav-indicator"></div>
+                </button>
+                <button class="nav-item" data-section="preview">
+                    <i data-feather="eye"></i>
+                    <span class="nav-text">Live-Vorschau</span>
+                    <div class="nav-indicator"></div>
+                </button>
+                <button class="nav-item" data-section="apikeys">
+                    <i data-feather="key"></i>
+                    <span class="nav-text">API-Schlüssel</span>
+                    <div class="nav-indicator"></div>
+                </button>
+            </div>
+
+            <div class="nav-footer">
+                <button class="theme-toggle" id="themeToggle">
+                    <i data-feather="moon"></i>
+                </button>
+                <button class="settings-btn" id="settingsBtn">
+                    <i data-feather="settings"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h1 class="page-title">KI-Entwicklungsplattform</h1>
+                    <p class="page-subtitle">Intelligente Programmierumgebung der nächsten Generation</p>
+                </div>
+                <div class="header-right">
+                    <div class="action-buttons">
+                        <button class="action-btn execute-btn" onclick="executeCode()" title="Code ausführen (Ctrl+Enter)">
+                            <i data-feather="play"></i>
+                            Code ausführen
+                        </button>
+                        <button class="action-btn secondary" onclick="viewCacheStats()" title="Cache-Statistiken anzeigen">
+                            <i data-feather="database"></i>
+                            Cache
+                        </button>
+                        <button class="action-btn test-btn" onclick="runTests()" title="Tests starten">
+                            <i data-feather="check-circle"></i>
+                            Tests starten
+                        </button>
+                    </div>
+                    <div class="status-indicators">
+                        <div class="status-item">
+                            <div class="status-dot online"></div>
+                            <span>KI Online</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-dot online"></div>
+                            <span>Code-Ausführung Bereit</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Section -->
+            <section id="dashboard-section" class="content-section active">
+                <div class="bento-grid">
+                    <!-- AI Chat Widget (größer) -->
+                    <div class="bento-card chat-widget-large">
+                        <div class="card-header">
+                            <h3>KI-Assistent</h3>
+                            <div class="ai-status">
+                                <div class="pulse-dot"></div>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                        <div class="quick-chat">
+                            <div class="chat-preview" id="dashboardChat">
+                                <div class="message ai">👋 Hallo! Ich bin bereit, dir bei der Entwicklung zu helfen.</div>
+                            </div>
+                            <div class="quick-input">
+                                <input type="text" placeholder="Frage den KI-Assistenten..." id="quickChatInput">
+                                <button class="send-btn" onclick="sendQuickMessage()">
+                                    <i data-feather="send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Editor Preview -->
+                    <div class="bento-card editor-preview">
+                        <div class="card-header">
+                            <h3>Code-Editor</h3>
+                            <button class="action-btn" onclick="switchToEditor()">
+                                <i data-feather="edit-3"></i>
+                                Editor öffnen
+                            </button>
+                        </div>
+                        <div class="editor-preview-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code">def analysiere_daten(dataset):</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code">    """KI-gestützte Datenanalyse"""</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code">    return ki_erkenntnisse(dataset)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Recent Activity (kleiner) -->
+                    <div class="bento-card recent-activity-small">
+                        <div class="card-header">
+                            <h3>Letzte Aktivitäten</h3>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon success">
+                                    <i data-feather="check"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Code erfolgreich ausgeführt</div>
+                                    <div class="activity-time">vor 2 Minuten</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon info">
+                                    <i data-feather="message-circle"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">KI-Analyse abgeschlossen</div>
+                                    <div class="activity-time">vor 5 Minuten</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Today's Activity (nach unten verschoben) -->
+                    <div class="bento-card stats-card-bottom">
+                        <div class="card-header">
+                            <h3>Heutige Aktivität</h3>
+                            <i data-feather="trending-up"></i>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">27</div>
+                                <div class="stat-label">Code-Ausführungen</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">KI-Interaktionen</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Erfolgsrate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section" class="content-section">
+                <div class="section-layout">
+                    <div class="layout-grid">
+                        <!-- AI Chat Panel -->
+                        <div class="panel chat-panel">
+                            <div class="panel-header">
+                                <h2>
+                                    <i data-feather="message-square"></i>
+                                    KI-Assistent
+                                </h2>
+                                <div class="panel-controls">
+                                    <button class="control-btn" onclick="clearChat()">
+                                        <i data-feather="trash-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-container" id="chat"></div>
+                            
+                            <div class="chat-input-area">
+                                <div class="input-group">
+                                    <input type="text" id="userInput" placeholder="Frage den KI-Assistenten..." />
+                                    <button class="primary-btn" onclick="sendMessage()">
+                                        <i data-feather="send"></i>
+                                        <span>Senden</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Code Editor Panel -->
+                        <div class="panel editor-panel">
+                            <div class="panel-header">
+                                <h2>
+                                    <i data-feather="code"></i>
+                                    Code-Editor
+                                </h2>
+                                <div class="panel-controls">
+                                    <select id="languageSelect" class="language-select">
+                                        <option value="python">Python</option>
+                                        <option value="javascript">JavaScript</option>
+                                        <option value="typescript">TypeScript</option>
+                                        <option value="html">HTML</option>
+                                        <option value="css">CSS</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div id="editor" class="monaco-editor"></div>
+                            
+                            <div class="panel-footer">
+                                <div class="editor-actions">
+                                    <button class="primary-btn" onclick="executeCode()">
+                                        <i data-feather="play"></i>
+                                        <span>Ausführen</span>
+                                    </button>
+                                    <button class="secondary-btn" onclick="analyzeCode()">
+                                        <i data-feather="search"></i>
+                                        <span>Analysieren</span>
+                                    </button>
+                                    <button class="secondary-btn" onclick="formatCode()">
+                                        <i data-feather="align-left"></i>
+                                        <span>Formatieren</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Live Terminal Panel -->
+                    <div class="panel terminal-panel">
+                        <div class="panel-header">
+                            <h2>
+                                <i data-feather="monitor"></i>
+                                Live-Terminal
+                            </h2>
+                            <div class="panel-controls">
+                                <button class="control-btn" id="connectTerminal" onclick="connectLiveTerminal()" title="Terminal verbinden">
+                                    <i data-feather="wifi"></i>
+                                </button>
+                                <button class="control-btn" onclick="clearTerminal()" title="Terminal leeren">
+                                    <i data-feather="trash-2"></i>
+                                </button>
+                                <button class="control-btn" onclick="copyTerminalOutput()" title="Ausgabe kopieren">
+                                    <i data-feather="copy"></i>
+                                </button>
+                                <div class="terminal-status" id="terminalStatus">
+                                    <span class="status-dot offline"></span>
+                                    <span>Offline</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terminal-container">
+                            <div id="terminal" class="terminal-content">
+                                <div class="terminal-welcome">
+🚀 AI Agent 2025 - Live-Terminal
+
+Drücke "Terminal verbinden" um das Live-Streaming zu starten.
+Code-Ausführung wird hier in Echtzeit angezeigt.
+                                </div>
+                            </div>
+                            <div class="terminal-progress" id="terminalProgress" style="display: none;">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                                <div class="progress-text" id="progressText">Bereit...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tests Section -->
+            <section id="tests-section" class="content-section">
+                <div class="test-dashboard">
+                    <div class="dashboard-header">
+                        <h1>Test-Framework</h1>
+                        <div class="test-actions">
+                            <button class="primary-btn" onclick="runAllTests()">
+                                <i data-feather="play-circle"></i>
+                                Alle Tests ausführen
+                            </button>
+                            <button class="secondary-btn" onclick="generateTests()">
+                                <i data-feather="plus"></i>
+                                Tests generieren
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="test-metrics">
+                        <div class="metric-card success">
+                            <div class="metric-icon">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-number" id="passedTests">0</div>
+                                <div class="metric-label">Tests bestanden</div>
+                            </div>
+                        </div>
+                        <div class="metric-card error">
+                            <div class="metric-icon">
+                                <i data-feather="x-circle"></i>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-number" id="failedTests">0</div>
+                                <div class="metric-label">Tests fehlgeschlagen</div>
+                            </div>
+                        </div>
+                        <div class="metric-card info">
+                            <div class="metric-icon">
+                                <i data-feather="pie-chart"></i>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-number" id="coverage">0%</div>
+                                <div class="metric-label">Code-Abdeckung</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="test-results-panel">
+                        <div class="panel-header">
+                            <h2>Test-Ergebnisse</h2>
+                        </div>
+                        <div class="test-results" id="testResults">
+                            <div class="empty-state">
+                                <i data-feather="clipboard"></i>
+                                <h3>Keine Tests ausgeführt</h3>
+                                <p>Klicke "Alle Tests ausführen" um zu beginnen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Snippets Section -->
+            <section id="snippets-section" class="content-section">
+                <div class="snippets-layout">
+                    <div class="snippets-sidebar">
+                        <div class="search-area">
+                            <div class="search-input">
+                                <i data-feather="search"></i>
+                                <input type="text" placeholder="Code-Bausteine durchsuchen..." id="snippetSearch">
+                            </div>
+                        </div>
+                        
+                        <div class="category-filters">
+                            <h3>Kategorien</h3>
+                            <div class="filter-list">
+                                <button class="filter-item active" data-category="all">
+                                    <i data-feather="layers"></i>
+                                    <span>Alle Bausteine</span>
+                                </button>
+                                <button class="filter-item" data-category="python">
+                                    <i data-feather="file-text"></i>
+                                    <span>Python</span>
+                                </button>
+                                <button class="filter-item" data-category="javascript">
+                                    <i data-feather="code"></i>
+                                    <span>JavaScript</span>
+                                </button>
+                                <button class="filter-item" data-category="api">
+                                    <i data-feather="globe"></i>
+                                    <span>API-Aufrufe</span>
+                                </button>
+                                <button class="filter-item" data-category="utils">
+                                    <i data-feather="tool"></i>
+                                    <span>Hilfsprogramme</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="snippets-content">
+                        <div class="snippets-header">
+                            <h2>Code-Bausteine</h2>
+                            <button class="secondary-btn">
+                                <i data-feather="plus"></i>
+                                Neuer Baustein
+                            </button>
+                        </div>
+                        <div class="snippets-grid" id="snippetsGrid">
+                            <!-- Code-Bausteine werden hier geladen -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preview Section -->
+            <section id="preview-section" class="content-section">
+                <div class="preview-layout">
+                    <div class="preview-header">
+                        <h1>Live-Vorschau</h1>
+                        <div class="preview-controls">
+                            <button class="control-btn" onclick="refreshPreview()">
+                                <i data-feather="refresh-cw"></i>
+                                Aktualisieren
+                            </button>
+                            <button class="control-btn" onclick="openInNewTab()">
+                                <i data-feather="external-link"></i>
+                                Neuer Tab
+                            </button>
+                            <div class="url-display">
+                                <span>URL:</span>
+                                <code id="previewUrl">http://localhost:5000</code>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-container">
+                        <iframe id="previewIframe" src="/" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- API Keys Section -->
+            <section id="apikeys-section" class="content-section">
+                <div class="apikeys-layout">
+                    <div class="section-header">
+                        <h1>API-Schlüssel Verwaltung</h1>
+                        <p>Sichere Verwaltung deiner API-Zugangsdaten</p>
+                    </div>
+                    
+                    <div class="api-cards-grid">
+                        <div class="api-card">
+                            <div class="api-card-header">
+                                <div class="api-info">
+                                    <div class="api-icon openai">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="api-details">
+                                        <h3>OpenAI</h3>
+                                        <p>Für KI-Chat und Code-Analyse</p>
+                                    </div>
+                                </div>
+                                <div class="api-status connected" id="openaiStatus">
+                                    <i data-feather="check-circle"></i>
+                                    <span>Verbunden</span>
+                                </div>
+                            </div>
+                            <div class="api-card-content">
+                                <div class="input-group">
+                                    <label>API-Schlüssel</label>
+                                    <div class="key-input">
+                                        <input type="password" id="openaiKey" placeholder="sk-..." />
+                                        <button class="toggle-btn" onclick="toggleKeyVisibility('openaiKey')">
+                                            <i data-feather="eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="api-actions">
+                                    <button class="primary-btn" onclick="testApiKey('openai')">
+                                        <i data-feather="zap"></i>
+                                        Testen
+                                    </button>
+                                    <button class="secondary-btn" onclick="saveApiKey('openai')">
+                                        <i data-feather="save"></i>
+                                        Speichern
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="api-card">
+                            <div class="api-card-header">
+                                <div class="api-info">
+                                    <div class="api-icon github">
+                                        <i data-feather="github"></i>
+                                    </div>
+                                    <div class="api-details">
+                                        <h3>GitHub</h3>
+                                        <p>Für Repository-Integration</p>
+                                    </div>
+                                </div>
+                                <div class="api-status disconnected" id="githubStatus">
+                                    <i data-feather="x-circle"></i>
+                                    <span>Nicht verbunden</span>
+                                </div>
+                            </div>
+                            <div class="api-card-content">
+                                <div class="input-group">
+                                    <label>Persönliches Zugangs-Token</label>
+                                    <div class="key-input">
+                                        <input type="password" id="githubKey" placeholder="ghp_..." />
+                                        <button class="toggle-btn" onclick="toggleKeyVisibility('githubKey')">
+                                            <i data-feather="eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="api-actions">
+                                    <button class="primary-btn" onclick="testApiKey('github')">
+                                        <i data-feather="zap"></i>
+                                        Testen
+                                    </button>
+                                    <button class="secondary-btn" onclick="saveApiKey('github')">
+                                        <i data-feather="save"></i>
+                                        Speichern
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <button class="fab" id="fabButton">
+            <i data-feather="plus"></i>
+        </button>
+        <div class="fab-menu" id="fabMenu">
+            <button class="fab-action" onclick="switchSection('results')">
+                <i data-feather="code"></i>
+                <span>Neuer Code</span>
+            </button>
+            <button class="fab-action" onclick="switchSection('snippets')">
+                <i data-feather="layers"></i>
+                <span>Code-Baustein</span>
+            </button>
+            <button class="fab-action" onclick="switchSection('tests')">
+                <i data-feather="check-square"></i>
+                <span>Test</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <div class="loading-text">Wird geladen...</div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Initialize app when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Feather Icons if available
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+            
+            // Initialize app
+            initializeApp();
+        });
+    </script>
+</body>
+</html>

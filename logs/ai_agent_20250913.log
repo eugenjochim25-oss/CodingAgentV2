@@ -1,0 +1,13 @@
+2025-09-13 18:33:11,196 - ai_agent - INFO - Logging configured successfully
+2025-09-13 18:33:12,174 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-13 18:33:45,530 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-13 18:33:54,484 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-13 18:33:54,486 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-13 18:34:47,998 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-13 18:34:53,148 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-13 18:34:53,149 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-13 18:35:18,193 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-13 18:35:23,666 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-13 18:35:23,668 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-13 22:06:33,395 - ai_agent - INFO - Logging configured successfully
+2025-09-13 22:06:34,731 - services.cache_service - INFO - ✅ Cache Service initialized: cache

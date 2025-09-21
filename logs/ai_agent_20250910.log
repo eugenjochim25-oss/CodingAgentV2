@@ -1,0 +1,20 @@
+2025-09-10 23:10:43,602 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:10:44,313 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:10:44,325 - werkzeug - WARNING -  * Debugger is active!
+2025-09-10 23:11:17,459 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:11:17,476 - werkzeug - WARNING -  * Debugger is active!
+2025-09-10 23:11:22,694 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:11:22,710 - werkzeug - WARNING -  * Debugger is active!
+2025-09-10 23:12:42,135 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:13:47,815 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:18:08,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-09-10 23:18:08,989 - services.ai_service - ERROR - Error generating AI response: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-09-10 23:18:38,135 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-09-10 23:18:38,136 - services.ai_service - ERROR - Error generating AI response: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-09-10 23:30:30,356 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-09-10 23:30:30,357 - services.ai_service - ERROR - Error analyzing code: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-09-10 23:44:30,301 - ai_agent - INFO - Logging configured successfully
+2025-09-10 23:59:15,238 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-10 23:59:16,301 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-10 23:59:17,186 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-10 23:59:17,188 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}

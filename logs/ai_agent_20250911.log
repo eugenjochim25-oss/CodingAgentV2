@@ -1,0 +1,224 @@
+2025-09-11 00:05:50,883 - ai_agent - INFO - Logging configured successfully
+2025-09-11 00:38:42,347 - ai_agent - INFO - Logging configured successfully
+2025-09-11 06:40:20,508 - ai_agent - INFO - Logging configured successfully
+2025-09-11 06:48:42,228 - ai_agent - INFO - Logging configured successfully
+2025-09-11 06:49:13,900 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 06:49:14,679 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 06:49:16,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 06:49:16,100 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 06:52:07,202 - ai_agent - INFO - Logging configured successfully
+2025-09-11 07:59:09,948 - ai_agent - INFO - Logging configured successfully
+2025-09-11 07:59:29,030 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 07:59:29,785 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 07:59:31,609 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 07:59:31,611 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 08:01:25,563 - ai_agent - INFO - Logging configured successfully
+2025-09-11 08:20:09,608 - ai_agent - INFO - Logging configured successfully
+2025-09-11 08:27:56,530 - ai_agent - INFO - Logging configured successfully
+2025-09-11 08:31:07,060 - ai_agent - INFO - Logging configured successfully
+2025-09-11 08:31:40,279 - ai_agent - INFO - Logging configured successfully
+2025-09-11 09:16:16,623 - ai_agent - INFO - Logging configured successfully
+2025-09-11 09:20:09,898 - ai_agent - INFO - Logging configured successfully
+2025-09-11 09:21:22,268 - ai_agent - INFO - Logging configured successfully
+2025-09-11 09:25:13,165 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 09:25:13,818 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 09:25:15,392 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 09:25:15,394 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 09:31:18,733 - ai_agent - INFO - Logging configured successfully
+2025-09-11 09:33:38,113 - ai_agent - INFO - Logging configured successfully
+2025-09-11 09:34:43,796 - ai_agent - INFO - Logging configured successfully
+2025-09-11 11:24:48,697 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 11:24:49,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 11:24:50,897 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 11:24:50,898 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 13:32:48,584 - ai_agent - INFO - Logging configured successfully
+2025-09-11 15:02:58,240 - ai_agent - INFO - Logging configured successfully
+2025-09-11 15:04:29,460 - ai_agent - INFO - Logging configured successfully
+2025-09-11 15:10:20,017 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 15:10:20,983 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 15:10:22,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 15:10:22,134 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 15:11:59,159 - ai_agent - INFO - Logging configured successfully
+2025-09-11 15:14:58,825 - ai_agent - INFO - Logging configured successfully
+2025-09-11 15:16:53,156 - ai_agent - INFO - Logging configured successfully
+2025-09-11 15:58:00,649 - ai_agent - INFO - Logging configured successfully
+2025-09-11 16:13:52,430 - ai_agent - INFO - Logging configured successfully
+2025-09-11 16:14:13,783 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 16:14:14,558 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 16:14:16,074 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 16:14:16,076 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 19:47:57,119 - ai_agent - INFO - Logging configured successfully
+2025-09-11 20:53:02,186 - ai_agent - INFO - Logging configured successfully
+2025-09-11 20:59:18,402 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:02:51,765 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:04:37,039 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:06:28,298 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:07:49,215 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:10:09,342 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:11:53,320 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:20:44,508 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:22:58,775 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:34:32,230 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:34:32,269 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 21:40:02,776 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 21:40:03,581 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 21:40:04,930 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-11 21:40:04,931 - services.ai_service - ERROR - Error generating AI response: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-09-11 21:48:31,526 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:48:31,555 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 21:50:02,247 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:50:35,721 - ai_agent - INFO - Logging configured successfully
+2025-09-11 21:50:36,276 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 22:11:52,821 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:11:56,059 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:11:56,060 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:12:37,233 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:12:40,397 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:12:40,399 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:13:07,519 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:13:10,588 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:13:10,589 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:15:22,644 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:15:24,282 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:15:24,283 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:16:41,772 - ai_agent - INFO - Logging configured successfully
+2025-09-11 22:16:42,525 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 22:16:53,517 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:16:54,753 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:16:54,755 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:19:08,167 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:19:11,239 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:19:11,241 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:19:11,242 - services.ai_service - ERROR - Error generating AI response: 'NoneType' object is not iterable
+2025-09-11 22:21:43,900 - ai_agent - INFO - Logging configured successfully
+2025-09-11 22:21:44,465 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 22:21:51,739 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:21:54,938 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:21:54,940 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:21:54,940 - services.ai_service - WARNING - Could not extract text from Gemini response: sdk_http_response=HttpResponse(
+  headers=<dict len=10>
+) candidates=[Candidate(
+  content=Content(
+    role='model'
+  ),
+  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,
+  index=0
+)] create_time=None model_version='gemini-2.5-flash' prompt_feedback=None response_id='gkvDaLfQOK2c-8YPwPTOsAQ' usage_metadata=GenerateContentResponseUsageMetadata(
+  prompt_token_count=58,
+  prompt_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=58
+    ),
+  ],
+  thoughts_token_count=499,
+  total_token_count=557
+) automatic_function_calling_history=[] parsed=None
+2025-09-11 22:22:26,089 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:22:27,033 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:22:27,034 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:25:02,296 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:25:05,291 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:25:05,292 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:25:05,293 - services.ai_service - WARNING - Could not extract text from Gemini response: sdk_http_response=HttpResponse(
+  headers=<dict len=10>
+) candidates=[Candidate(
+  content=Content(
+    role='model'
+  ),
+  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,
+  index=0
+)] create_time=None model_version='gemini-2.5-flash' prompt_feedback=None response_id='QUzDaM-LEdmY-8YPnvGaiQw' usage_metadata=GenerateContentResponseUsageMetadata(
+  prompt_token_count=305,
+  prompt_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=305
+    ),
+  ],
+  thoughts_token_count=499,
+  total_token_count=804
+) automatic_function_calling_history=[] parsed=None
+2025-09-11 22:29:53,811 - ai_agent - INFO - Logging configured successfully
+2025-09-11 22:29:54,579 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 22:30:31,131 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:30:37,210 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:30:37,211 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:50:33,576 - ai_agent - INFO - Logging configured successfully
+2025-09-11 22:50:34,219 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 22:53:55,939 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:54:07,601 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:54:07,602 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:54:07,603 - services.ai_service - WARNING - Empty response from Gemini: sdk_http_response=HttpResponse(
+  headers=<dict len=10>
+) candidates=[Candidate(
+  content=Content(
+    role='model'
+  ),
+  finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'>,
+  index=0
+)] create_time=None model_version='gemini-2.5-flash' prompt_feedback=None response_id='D1PDaJr_I_uu-8YPqJ_sgQg' usage_metadata=GenerateContentResponseUsageMetadata(
+  prompt_token_count=305,
+  prompt_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=305
+    ),
+  ],
+  thoughts_token_count=1999,
+  total_token_count=2304
+) automatic_function_calling_history=[] parsed=None
+2025-09-11 22:54:49,093 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:55:01,344 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:55:01,345 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 22:57:10,488 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 22:57:21,689 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 22:57:21,691 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 23:06:11,398 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:06:12,000 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:08:54,424 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:08:54,989 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:09:38,676 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 23:09:44,025 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 23:09:44,027 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 23:15:18,878 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:15:19,446 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:16:13,627 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:16:14,172 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:17:05,906 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:17:06,460 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:22:07,795 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:22:08,332 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:24:25,215 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 23:24:35,497 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 23:24:35,500 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 23:28:37,341 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:28:37,947 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:29:44,586 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 23:29:46,184 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 23:29:46,186 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 23:35:01,761 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:35:02,334 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:36:34,135 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:36:34,710 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:37:22,994 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:37:23,565 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:41:45,998 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:41:46,593 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:42:52,173 - ai_agent - INFO - Logging configured successfully
+2025-09-11 23:42:52,780 - services.cache_service - INFO - ✅ Cache Service initialized: cache
+2025-09-11 23:44:30,489 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 23:44:33,501 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 23:44:33,503 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 23:45:15,831 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-11 23:45:25,555 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-11 23:45:25,557 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-11 23:59:55,112 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-12 00:00:06,733 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-12 00:00:06,735 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-12 00:00:23,642 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-12 00:00:24,286 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-12 00:00:24,289 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-12 00:00:36,302 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-12 00:00:47,874 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-12 00:00:47,877 - google_genai.models - INFO - AFC remote call 1 is done.

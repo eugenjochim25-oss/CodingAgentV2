@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate AI Agent mit Monaco Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <h1>🤖 Ultimate AI Agent</h1>
+        <div class="chat-container" id="chat"></div>
+        <input type="text" id="userInput" placeholder="Schreib etwas..." />
+        <button onclick="sendMessage()">Senden</button>
+
+        <h2>💻 Code Executor</h2>
+        <div id="editor"></div>
+        <button onclick="executeCode()">Ausführen</button>
+        <pre id="output"></pre>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "result": {
+    "success": true,
+    "output": "✨ 🤖 AI-gestützte Code-Analyse\n✨ ⚡ Blitzschnelle Ausführung\n✨ 🎨 Glassmorphism UI\n✨ 📱 Mobile-First Design\n✨ 🔍 Smart Debugging\n\n🚀 Production-Ready 2025!\n",
+    "error": "",
+    "execution_time": 0.022,
+    "from_cache": false,
+    "cache_key": "32982167"
+  },
+  "cached_at": 1757788604.3065808,
+  "expires_at": 1757875004.3065808,
+  "cache_key": "329821676b67f0d1889b32eb7d4c18d3a87f5441e0201ad6fd5d8b867f18a69e",
+  "ttl_seconds": 86400
+}
